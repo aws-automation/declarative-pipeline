@@ -12,6 +12,11 @@ pipeline {
                 echo 'Testing...'
             }
         }
+        stage('Analysis') {
+            steps {
+                echo 'Analysing code quality...'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
